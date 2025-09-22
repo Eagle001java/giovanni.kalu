@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="contactt.css">
+</head>
+<body>
+    <section>
+        <header>
+              <button class="back" onclick="goBack()"><b>&#8592;</b></button>
+              <div onclick="toggleMenu()" class="toggleMenu">
+                <div class="menu"></div>
+                <div class="menu"></div>
+                <div class="menu"></div>
+            </div>
+        </header>
+        <nav id="menuBar" class="menuBar">
+            <span class="close" onclick="closeMenu()">&times;</span>
+            <a href="cover.html">Cover</a>
+            <a href="giovanni.html">Home</a>
+            <a href="giovanniOne.html">About</a>
+            <a href="giovanniTwo.html">Portfolio</a>
+            <a href="#">Contact</a>
+        </nav>
+        <div class="overlay"></div>
+        <div class="join">
+           <div class="com">
+             <h1>Contact Me!</h1>
+            <h2>giovannikalu.com</h2>
+           </div>
+            <div class="one">
+          <form onsubmit="sendToGmail(event)">
+            <label for="name"></label>
+            <input type="text" id="name" name="name" placeholder="name" required>
+
+            <label for="email"></label>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+
+            <label for="message"></label>
+            <textarea name="message" id="message" rows="5" placeholder="Write a Message" required></textarea>
+
+            <button id="submit" type="submit">Send</button>
+        </form>
+      </div>
+       </div>
+    </section>
+    <script src="contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,236 @@
+@media (min-width: 1000px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section {
+    /* border: 1px solid black; */
+    width: 100vw;
+    height: auto;
+}
+html {
+    scroll-behavior: smooth;
+}
+header {
+    /* border: 1px solid red; */
+    width: 100vw;
+    height: 100px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    /* box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+    background-color: white; */
+}
+/* .toggleMenu {
+    border: 1px solid blue;
+    width: 50px;
+    height: 30px;
+    float: right;
+    margin-right: 10px;
+    margin-top: 30px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+.menu {
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    margin: 2px;
+}
+.menuBar {
+    width: 100vw;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #a0a0a0;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 20px 0;
+    transition: top 0.5s ease;
+    z-index: 1000;
+    animation: glow 5s infinite alternate;
+}
+
+@keyframes glow {
+    from { background-color: #a0a0a0; }
+    to { background-color: #444; }
+}
+/* .menuBar.show {
+    top: 0;
+} */
+.menuBar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+.menuBar a:hover {
+    border: 1px solid white;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-style: italic;
+    transform: translateY(-5px);
+}
+.close {
+    /* position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 28px;
+    color: #fff;
+    cursor: pointer; */
+    display: none;
+}
+.one {
+    /* border: 1px solid blue; */
+    width: 100vw;
+    height: auto;
+    margin-top: 10px;
+}
+.two {
+    /* border: 1px solid brown; */
+    width: 1000px;
+    height: 500px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    /* padding: 10px; */
+    display: flex;
+    justify-content: space-evenly;
+}
+.three {
+    /* border: 1px solid red; */
+    width: 600px;
+    height: 480px;
+    margin-top: 5px;
+    background-image: url(giovanni/six.jpg);
+    background-position: 0 -70px;
+    background-size: cover;
+    border-radius: 4px;
+}
+.four {
+    /* border: 1px solid red; */
+    width: 350px;
+    height: 480px;
+    margin-top: 5px;
+    background-image: url(giovanni/thirteen.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+}
+.five {
+    /* border: 1px solid red; */
+    width: 350px;
+    height: 480px;
+    background-image: url(giovanni/nine.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+}
+.six {
+    /* border: 1px solid red; */
+    width: 600px;
+    height: 480px;
+    background-image: url(giovanni/seven.jpg);
+    background-position: 0 -30px;
+    background-size: cover;
+    border-radius: 5px;
+}
+#seven {
+    background-image: url(giovanni/sixteen.jpg);
+    background-position: 0 -45px;
+    background-size: cover;
+}
+#eight {
+    background-image: url(giovanni/eleven.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#nine {
+    background-image: url(giovanni/four.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#ten {
+    background-image: url(giovanni/five.jpg);
+    background-position: -3px -20px;
+    background-size: cover;
+}
+#eleven {
+    background-image: url(giovanni/eight.jpg);
+    background-position: 0 -30px;
+    background-size: cover;
+}
+#twelve {
+    background-image: url(giovanni/fourteen.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#thirteen {
+    background-image: url(giovanni/ten.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#one {
+    background-image: url(giovanni/fifteen.jpg);
+    background-position: 0 -30px;
+    background-size: cover;
+}
+footer {
+    /* border: 1px solid green; */
+    width: 100vw;
+    height: auto;
+    background-color: whitesmoke;
+    margin-top: 10px;
+    text-align: center;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+.contact {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.send {
+    /* border: 1px solid red; */
+    width: 200px;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+.back {
+    width: 30px;
+    height: 20px;
+    background-color: #333;
+    color: white;
+    float: left;
+    /* bottom: 5px; */
+    margin-left: 10px;
+}
+.next {
+    width: 30px;
+    height: 20px;
+    background-color: #333;
+    color: white;
+    float: right;
+    /* bottom: 5px; */
+    margin-right: 10px;
+}
+
+}
